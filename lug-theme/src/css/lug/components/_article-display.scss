@@ -1,0 +1,21 @@
+.#{$prefix}-article-display {
+    &__image {
+        height: 500px;
+    }
+
+    &__content {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        background: $color-white;
+        padding: $spacer-5;
+        margin-top: -8rem;
+        min-height: 400px;
+    }
+
+    &__title {
+        font-size: $font-size-article-title;
+    }
+
+}

@@ -1,0 +1,43 @@
+$color-primary: var(--primary);
+$color-secondary: var(--secondary);
+$color-highlight: var(--highlight);
+$color-danger: var(--danger);
+$color-success: var(--success);
+$color-warning: var(--warning);
+$color-info: var(--info);
+$color-white: var(--white);
+$color-black: var(--black);
+$color-dark: var(--dark);
+$color-light: var(--light);
+$color-base: var(--base);
+$color-dark-90: var(--dark-90);
+$color-dark-70: var(--dark-70);
+$color-dark-50: var(--dark-50);
+$color-dark-30: var(--dark-30);
+$color-light-30: var(--light-30);
+$color-light-50: var(--light-50);
+$color-light-70: var(--light-70);
+$color-light-90: var(--light-90);
+
+$colors: (
+    primary: var(--primary),
+    secondary: var(--secondary),
+    highlight: var(--highlight),
+    danger: var(--danger),
+    success: var(--success),
+    warning: var(--warning),
+    info: var(--info),
+    white: var(--white),
+    black: var(--black),
+    dark: var(--dark),
+    light: var(--light),
+    base: var(--base),
+    dark-90: var(--dark-90),
+    dark-70: var(--dark-70),
+    dark-50: var(--dark-50),
+    dark-30: var(--dark-30),
+    light-30: var(--light-30),
+    light-50: var(--light-50),
+    light-70: var(--light-70),
+    light-90: var(--light-90)
+);

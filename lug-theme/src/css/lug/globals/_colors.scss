@@ -1,0 +1,36 @@
+// Color classes 
+.color {
+    @each $k,$v in $theme-colors {
+        &-#{$k} {
+            color: #{$v} !important;
+        }
+    }
+}
+.hover-color {
+    @each $k,$v in $theme-colors {
+        &-#{$k}:hover {
+            color: #{$v} !important;
+        }
+    }
+}
+.bg {
+    @each $k,$v in $theme-colors {
+        &-#{$k} {
+            background-color: #{$v} !important;
+        }
+    }
+}
+.hover-bg {
+    @each $k,$v in $theme-colors {
+        &-#{$k}:hover {
+            background-color: #{$v} !important;
+        }
+    }
+}
+.border {
+    @each $k,$v in $theme-colors {
+        &-#{$k} {
+            border-color: #{$v} !important;
+        }
+    }
+}

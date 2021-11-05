@@ -1,0 +1,69 @@
+// Main Project
+// --
+@import "lug/variables";
+@import "lug/utilities";
+@import "lug/globals";
+@import "lug/fonts";
+@import "lug/components";
+    
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    &.scroll-disabled {
+        overflow: hidden;
+    }
+    min-width: 320px;
+}
+
+#wrapper,
+.page-editor__layout-viewport__resizer {
+
+	background-color: var(--body-bg) !important;
+	color: var(--body-color);
+	font-size: $font-size-medium;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: $font-weight-normal;
+
+    min-width: 320px;
+
+    display: flex;
+    flex-direction: column; 
+    min-height: calc(100vh);
+    justify-content: space-between;
+
+}
+
+.page-editor__disabled-area::after {
+    z-index: 1;
+}
+
+#main-content {
+    overflow: hidden;   
+    position: relative;
+}
+
+.has-edit-mode-menu #main-content {
+    overflow: visible;
+    position: unset;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    &:hover {
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+
+
+#content {
+    flex-grow: 1;
+}
+
+.container {
+    transition: width $transition-time, max-width $transition-time;
+}

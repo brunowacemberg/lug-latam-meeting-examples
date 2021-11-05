@@ -1,0 +1,40 @@
+.#{$prefix}-button {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: $button-padding-y $button-padding-x;
+    height: $button-height;
+    font-size: $button-font-size;
+
+    @include media-breakpoint-up(lg) {
+        padding: $button-lg-padding-y $button-lg-padding-x;
+        height: $button-lg-height;
+        font-size: $button-lg-font-size;
+    }
+    
+}
+
+// Colors
+.#{$prefix}-button {
+
+    &-primary {
+        background-color: $button-primary-background-color;
+        color: $button-primary-color;
+        &:hover {
+            background-color: $button-primary-background-color-hover;
+            color: $button-primary-color-hover;
+        }
+    }
+
+    &-secondary {
+        background-color: $button-secondary-background-color;
+        color: $button-secondary-color;
+        &:hover {
+            background-color: $button-secondary-background-color-hover;
+            color: $button-secondary-color-hover;
+        }
+    }
+
+}   

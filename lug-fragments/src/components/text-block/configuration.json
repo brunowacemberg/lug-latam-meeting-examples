@@ -1,0 +1,15 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "showTitle",
+                    "label": "Mostrar título",
+                    "description": "",
+                    "type": "checkbox",
+                    "defaultValue": false
+                }
+            ]
+        }
+    ]
+}

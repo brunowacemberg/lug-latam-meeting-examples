@@ -1,0 +1,14 @@
+.lug-destaque-principal {
+	height: 80vh;
+	max-height: 580px;
+	min-height: 320px;
+	display: flex;
+	align-items: center;
+	
+	background-color: var(--gray);
+	color: var(--light);
+}
+
+.lug-destaque-principal__content {
+	max-width: 50%;
+}

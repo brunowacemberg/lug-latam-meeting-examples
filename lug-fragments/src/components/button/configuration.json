@@ -1,0 +1,31 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "btnColor",
+          "label": "Cor do botão",
+          "description": "",
+          "type": "select",
+          "dataType": "string",
+          "typeOptions": {
+            "validValues": [
+              { "label": "primary", "value": "primary" },
+              { "label": "secondary", "value": "secondary" }
+            ]
+          },
+          "defaultValue": "primary"
+        },
+
+        {
+          "name": "btnGrow",
+          "label": "Ocupar container",
+          "description": "",
+          "type": "checkbox",
+          "defaultValue": false
+        }
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+// ------------------
+// Project Settings
+// ------------------
+
+// Project Global settings
+// -
+$prefix: "lug";
+
+$header-control-menu-height: 48px;
+$header-control-menu-height-lg: 56px;
+
+// Spacers
+// -
+$spacers: (
+  0: var(--spacer-0, 0),
+  1: var(--spacer-1, 0.25rem),
+  2: var(--spacer-2, 0.5rem),
+  3: var(--spacer-3, 1rem),
+  4: var(--spacer-4, 1.5rem),
+  5: var(--spacer-5, 3rem),
+  6: var(--spacer-6, 4.5rem),
+  7: var(--spacer-7, 6rem),
+  8: var(--spacer-8, 7.5rem),
+  9: var(--spacer-9, 9rem),
+  10: var(--spacer-10, 10rem)
+);
+
+$spacer-1: map-get($spacers, 1);
+$spacer-2: map-get($spacers, 2);
+$spacer-3: map-get($spacers, 3);
+$spacer-4: map-get($spacers, 4);
+$spacer-5: map-get($spacers, 5);
+$spacer-6: map-get($spacers, 6);
+$spacer-7: map-get($spacers, 7);
+$spacer-8: map-get($spacers, 8);
+$spacer-9: map-get($spacers, 9);
+$spacer-10: map-get($spacers, 10);
+
+
+// Type variables
+// -
+$h1-font-size: var(--h1-font-size);
+$h2-font-size: var(--h2-font-size);
+$h3-font-size: var(--h3-font-size);
+$h4-font-size: var(--h4-font-size);
+$h5-font-size: var(--h5-font-size);
+$h6-font-size: var(--h6-font-size);
+
+$font-size-small: var(--font-size-small);
+$font-size-smaller: var(--font-size-smaller);
+$font-size-medium: var(--font-size-medium);
+$font-size-default: var(--font-size-default);
+$font-size-large: var(--font-size-large);
+$font-size-larger: var(--font-size-larger);
+$font-size-largest: var(--font-size-largest);
+$font-size-display: var(--font-size-display);
+$font-size-article-title: var(--font-size-article-title);
+
+$font-weight-lighter: var(--font-weight-lighter);
+$font-weight-light: var(--font-weight-light);
+$font-weight-normal: var(--font-weight-normal);
+$font-weight-semibold: var(--font-weight-semibold);
+$font-weight-bold: var(--font-weight-bold);
+$font-weight-bolder: var(--font-weight-bolder);
+
+
+// Button Variables
+// - 
+$button-padding-x: var(--button-padding-x);
+$button-padding-y: var(--button-padding-y);
+$button-height: var(--button-height);
+$button-font-size: var(--button-font-size);
+$button-lg-padding-x: var(--button-lg-padding-x);
+$button-lg-padding-y: var(--button-lg-padding-y);
+$button-lg-height: var(--button-lg-height);
+$button-lg-font-size: var(--button-lg-font-size);
+
+$button-primary-background-color: var(--button-primary-background-color);
+$button-primary-background-color-hover: var(--button-primary-background-color-hover);
+$button-primary-color: var(--button-primary-color);
+$button-primary-color-hover: var(--button-primary-color-hover);
+
+$button-secondary-background-color: var(--button-secondary-background-color);
+$button-secondary-background-color-hover: var(--button-secondary-background-color-hover);
+$button-secondary-color: var(--button-secondary-color);
+$button-secondary-color-hover: var(--button-secondary-color-hover);
+
+
+// Default transition time
+$transition-time: .25s;
+$transition-time-fast: .1s;
+
+// Border-radius
+$border-radius: 10px;
+
+//Shadows
+$box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+$box-shadow-lg: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+
+// Grid Breakpoints
+// -
+$grid-breakpoints: (
+	xs: 0,
+	sm: 350px,
+	md: 845px,
+	lg: 1270px,
+	xl: 1440px
+);
+
+$container-max-widths: (
+	sm: 480px,
+	md: 815px,
+	lg: 1240px,
+	xl: 1241px
+);
+
+$sm: map-get($grid-breakpoints, sm);
+$md: map-get($grid-breakpoints, md);
+$lg: map-get($grid-breakpoints, lg);
+$xl: map-get($grid-breakpoints, xl);
+$xs-max: map-get($grid-breakpoints, sm) - 1;
+$sm-max: map-get($grid-breakpoints, md) - 1;
+$md-max: map-get($grid-breakpoints, lg) - 1;
+$lg-max: map-get($grid-breakpoints, xl) - 1;
+$sm-container-width: map-get($container-max-widths, sm);
+$md-container-width: map-get($container-max-widths, md);
+$lg-container-width: map-get($container-max-widths, lg);
+$xl-container-width: map-get($container-max-widths, xl);

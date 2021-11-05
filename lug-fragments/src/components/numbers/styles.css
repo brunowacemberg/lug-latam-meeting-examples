@@ -1,0 +1,16 @@
+.lug-fragment-numbers__item {
+	text-align: center;
+}
+
+.lug-fragment-numbers__circle {
+	width: 124px;
+	height: 122px;
+	background-color: var(--primary);
+	border-radius: 62px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--light);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-large);
+}

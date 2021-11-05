@@ -1,0 +1,15 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "showLink",
+                    "label": "Mostrar link",
+                    "description": "",
+                    "type": "checkbox",
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

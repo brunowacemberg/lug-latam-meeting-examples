@@ -1,0 +1,31 @@
+[#assign colsCount = configuration.colsCount?number /]
+
+<div class="lug-fragment-numbers">
+	<div class="row">
+		
+		[#list 1..colsCount as i]
+			<div class="col-6 col-md">
+				<div class="lug-fragment-numbers__item py-4">
+
+					<div>
+						<div class="lug-fragment-numbers__circle">
+							<lfr-editable id="number-${i}" type="text">1.234</lfr-editable>
+						</div>
+					</div>
+					<div class="mt-3">
+						<h3 class="mb-0" data-lfr-editable-type="text" data-lfr-editable-id="label-${i}">
+							Clientes
+						</h3>
+						<small data-lfr-editable-type="text" data-lfr-editable-id="description-${i}">
+							Atendidos em 2021
+						</small>
+					</div>
+
+				</div>
+
+			</div>
+		
+		[/#list]
+	
+	</div>
+</div>

@@ -1,0 +1,21 @@
+.#{$prefix}-footer {
+    
+    color: $color-light;
+    background-color: $color-dark-70;
+    
+    a {
+        color: $color-light;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__logo-img {
+        width: 62px;
+        height: 15px;
+    }
+
+    
+}

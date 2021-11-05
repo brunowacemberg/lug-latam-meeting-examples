@@ -1,0 +1,25 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "colsCount",
+                    "label": "Número de columnas",
+                    "description": "",
+                    "type": "select",
+                    "dataType": "string",
+                    "typeOptions": {
+                        "validValues": [
+                            { "value": "2" },
+                            { "value": "3" },
+                            { "value": "4" },
+                            { "value": "5" },
+                            { "value": "6" }
+                        ]
+                    },
+                    "defaultValue": "3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+h1, .h1 {
+    font-size: $h1-font-size
+}
+h2, .h2 {
+    font-size: $h2-font-size
+}
+h3, .h3 {
+    font-size: $h3-font-size
+}
+h4, .h4 {
+    font-size: $h4-font-size
+}
+h5, .h5 {
+    font-size: $h5-font-size
+}
+h6, .h6 {
+    font-size: $h6-font-size
+}
+
+.font-size-small, small {
+    font-size: $font-size-small;  
+} 
+.font-size-smaller {
+    font-size: $font-size-smaller;  
+} 
+.font-size-medium {
+    font-size: $font-size-medium;  
+} 
+.font-size-default {
+    font-size: $font-size-default;  
+} 
+.font-size-large {
+    font-size: $font-size-large;  
+} 
+.font-size-larger {
+    font-size: $font-size-larger;  
+} 
+.font-size-largest {
+    font-size: $font-size-largest;  
+} 
+.font-size-display {
+    font-size: $font-size-display;  
+} 
+.font-size-article-title {
+    font-size: $font-size-article-title;  
+} 
+
+
+.font-weight-lighter {
+    font-weight: $font-weight-lighter;
+}
+.font-weight-light {
+    font-weight: $font-weight-light;
+}
+.font-weight-normal {
+    font-weight: $font-weight-normal;
+}
+.font-weight-semibold {
+    font-weight: $font-weight-semibold;
+}
+.font-weight-bold, strong {
+    font-weight: $font-weight-bold;
+}
+.font-weight-bolder {
+    font-weight: $font-weight-bolder;
+}

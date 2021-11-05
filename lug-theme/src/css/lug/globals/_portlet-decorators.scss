@@ -1,0 +1,43 @@
+
+// Common (all decorators)
+.portlet-boundary {
+
+	> .portlet { 
+		margin-bottom: 0;
+
+		> .portlet-topper {
+			position: absolute;
+		}
+
+		> .portlet-content {
+			padding: 0;
+			background: transparent;
+			background-color: transparent;
+			border: none;
+
+			> .portlet-header {
+				display: none;
+			}
+			
+		}
+
+	}
+}
+
+.portlet-icon-back {
+	width: 34px;
+    height: 34px;
+    background: #f2f3f5;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #212125;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+	&:hover {
+		background: #e1e2e4;
+		color: #000000;
+	}
+}

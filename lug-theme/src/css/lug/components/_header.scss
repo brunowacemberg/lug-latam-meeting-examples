@@ -1,0 +1,93 @@
+$header-z-index: 987;
+$header-upper-section-height: 45px;
+$header-upper-section-height-lg: 55px;
+$header-lower-section-height: 65px;
+$header-lower-section-height-lg: 112px;
+
+.#{$prefix}-header {
+    
+    width:100%;
+
+    background-color: $color-white;
+    box-shadow: $box-shadow-lg;
+
+    transition: transform $transition-time;
+
+    &__upper-section {
+        display: flex;
+        align-items: center;
+        height: $header-upper-section-height;
+        overflow: hidden;
+        transition: height $transition-time;
+
+        &-navigation {
+            a {
+                color: $color-dark-30;
+                font-size: $font-size-small;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: $header-upper-section-height-lg;
+        }
+
+    }
+
+    &__divider {
+        border-bottom: $color-light-70 solid 1px;
+    }
+    
+    &__lower-section {
+        display: flex;
+        align-items: center;
+        height: $header-lower-section-height;
+        transition: height $transition-time;
+        
+        @include media-breakpoint-up(lg) {
+            height: $header-lower-section-height-lg;
+        }
+
+    }
+
+    &__logo {
+
+        img {
+            width: auto;
+            height: 32px;
+        }
+
+        @include media-breakpoint-up(lg) {
+
+            img {
+                height: 56px;
+            }
+        }
+
+    }
+
+}
+
+
+
+body:not(.has-edit-mode-menu) {
+
+    // Stickyness
+    .#{$prefix}-header-wrapper {
+        position: sticky;
+        z-index: $header-z-index;
+        top: (-1 * $header-upper-section-height);
+        @include media-breakpoint-up(lg) {
+            top: (-1 * $header-upper-section-height-lg);
+        }
+    }
+
+    &.has-control-menu .#{$prefix}-header-wrapper {
+        top: (-1 * ($header-upper-section-height - $header-control-menu-height));
+        @include media-breakpoint-up(lg) {
+            top: (-1 * ($header-upper-section-height-lg - $header-control-menu-height-lg));
+        }
+    }
+
+}
+
+
